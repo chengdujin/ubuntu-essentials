@@ -31,6 +31,7 @@ set foldenable
 set foldmethod=marker
 filetype plugin on
 " create a undo file
+set undodir=/home/jinyuan/.vim/tmp/undo
 set undofile 
 " python conventions
 set wrap
