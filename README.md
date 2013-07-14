@@ -10,5 +10,6 @@ Software
 
 Code Segment
 -------------
-1. Better Git Log (git lg | git log -p)
-   > git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+1. [Better Git Log](https://coderwall.com/p/euwpig?i=3&p=1&t=git) 
+    git lg | git log -p
+    git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
