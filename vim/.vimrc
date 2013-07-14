@@ -26,9 +26,10 @@ set ignorecase
 set smartcase
 set t_Co=256
 colorscheme molokai
+"colorscheme Tomorrow-Night
 set laststatus=2
 set foldenable
-set foldmethod=marker
+set foldmethod=manual
 filetype plugin on
 " create a undo file
 set undodir=/home/jinyuan/.vim/tmp/undo
@@ -41,7 +42,9 @@ set colorcolumn=85
 " save if losing focus
 au FocusLost * :wa
 set clipboard=unnamed
+set relativenumber
 
+:iabbrev pyhead #!/usr/bin/env python <cr>#-*- coding: utf-8 -*- <cr><cr>import sys <cr>reload(sys) <cr>sys.setdefaultencoding('UTF-8')
 " replace default leader key with ,
 let mapleader = ","
 " clear highlight color after search
@@ -73,13 +76,21 @@ noremap <F2> :YcmCompleter GoToDefinitionElseDeclaration<cr>
 let g:ycm_complete_in_comments = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+" Airline statusline
+let g:airline_theme='badwolf'
+" Syntastic
+let g:syntastic_python_checkers=['pyflakes']
+" restore_view
+set viewoptions=cursor,folds,slash,unix
+" AutoPEP8
+autocmd FileType python map <buffer> <F8> :call Autopep8()<CR>
+
 
 filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 " My Bundles here:
-"Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'uguu-org/vim-matrix-screensaver'
 Bundle 'vim-scripts/ZoomWin'
@@ -89,14 +100,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'sjl/gundo.vim'
 Bundle 'vim-scripts/YankRing.vim'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-"
+Bundle 'vim-scripts/restore_view.vim'
+Bundle 'tell-k/vim-autopep8'
+Bundle 'Lokaltog/vim-easymotion'
 filetype plugin indent on     " required!
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
-let g:airline_theme='badwolf'
-let g:syntastic_python_checkers=['pyflakes']
