@@ -13,6 +13,7 @@ Software
 11. newsbeuter
 12. fish 
 13. Ubuntu-Tweak
+13. System Load Indicator /Michael Hofmann
 
 
 Code Segment
