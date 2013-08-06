@@ -1,0 +1,8 @@
+alias goagent='nohup python /home/jinyuan/Public/goagent/local/proxy.py >/dev/null 2>&1'
+alias bnac='/home/jinyuan/Public/bnac -u jinyuan'
+alias sing='ssh -i ~/Public/AWS_identifiers/mandy.pem ubuntu@54.251.107.116'
+alias ssing='sftp -i ~/Public/AWS_identifiers/mandy.pem ubuntu@54.251.107.116'
+alias tokyo='ssh -i ~/Public/AWS_identifiers/searchet.pem ubuntu@54.248.227.71'
+alias stokyo='sftp -i ~/Public/AWS_identifiers/searchet.pem ubuntu@54.248.227.71'
+alias sao='ssh -i ~/Public/AWS_identifiers/guochen.pem ubuntu@54.232.81.44'
+alias ssao='sftp -i ~/Public/AWS_identifiers/guochen.pem ubuntu@54.232.81.44'
