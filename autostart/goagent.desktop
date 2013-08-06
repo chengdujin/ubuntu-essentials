@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Type=Application
+Exec=python /home/jinyuan/Public/goagent/local/goagent-gtk.py
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=goagent
+Name=goagent
+Comment[en_US]=
+Comment=
