@@ -27,6 +27,7 @@ set smartcase
 set t_Co=256
 colorscheme molokai
 "colorscheme Tomorrow-Night
+set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set foldenable
 set foldmethod=manual
@@ -45,21 +46,28 @@ set clipboard=unnamed
 set relativenumber
 
 :iabbrev pyhead #!/usr/bin/env python <cr>#-*- coding: utf-8 -*- <cr><cr>import sys <cr>reload(sys) <cr>sys.setdefaultencoding('UTF-8')
+:iabbrev pytodo <cr># TODO:<Esc>
 " replace default leader key with ,
 let mapleader = ","
 " clear highlight color after search
-nnoremap <leader><space> :noh<cr> 
+noremap <leader><space> :noh<cr> 
 " open window vertically
-nnoremap <leader>v <C-w>v<C-w>l
+noremap <leader>v <C-w>v<C-w>l
 " open window horizontally
-nnoremap <leader>h <C-w>h<C-w>l
+noremap <leader>h <C-w>s<C-w>l
 " maximize the window
-nnoremap <leader>o <C-w>o
+noremap <leader>o <C-w>o
 " map window jumping keys
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+" window size change keys
+noremap <leader>- <C-w>-
+noremap <leader>= <C-w>+
+noremap <leader>[ <C-w><
+noremap <leader>] <C-w>>
+
 " Bundle-specific
 map <F5> :NERDTreeToggle<CR>
 " Gundo enabler
@@ -84,6 +92,14 @@ let g:syntastic_python_checkers=['pyflakes']
 set viewoptions=cursor,folds,slash,unix
 " AutoPEP8
 autocmd FileType python map <buffer> <F8> :call Autopep8()<CR>
+" Powerline
+"set guifont=PowerlineSymbols\ for\ Powerline
+"let g:Powerline_symbols = 'fancy'
+" CtrlP
+noremap <F6> :CtrlPMixed<cr>
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
+nnoremap <leader>. :CtrlPTag<cr>
 
 
 filetype off                   " required!
@@ -95,6 +111,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'uguu-org/vim-matrix-screensaver'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'bling/vim-airline'
+"Bundle 'Lokaltog/powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
@@ -103,5 +120,7 @@ Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/restore_view.vim'
 Bundle 'tell-k/vim-autopep8'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kien/ctrlp.vim'
+
 filetype plugin indent on     " required!
 
