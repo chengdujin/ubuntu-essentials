@@ -2,6 +2,7 @@ http://news.ycombinator.com/rss
 http://news.dbanotes.net/rss
 http://geek.csdn.net/news/rss
 http://www.reddit.com/r/technology/.rss
+http://www.reddit.com/r/sideproject/.rss
 http://www.reddit.com/r/programming/.rss
 http://linux.cn/rss.xml
 http://www.36kr.com/feed
@@ -13,10 +14,8 @@ http://www.geekfan.net/feed/
 http://feeds.geekpark.net/
 http://www.v2ex.com/feed/tab/tech.xml
 http://www.v2ex.com/feed/tab/creative.xml
-https://groups.google.com/forum/feed/pongba/topics/rss.xml?num=50
 http://www.reddit.com/r/raspberry_pi/.rss
 http://www.reddit.com/r/python/.rss
-http://www.voosee.com/feed/rss/
 http://www.v2ex.com/feed/tab/play.xml
 http://knewone.com/things.atom
 http://content.businessvalue.com.cn/feed/rss
@@ -25,4 +24,3 @@ http://bbs.chengtu.com/forum.php?mod=rss&fid=6
 http://bbs.chengtu.com/forum.php?mod=rss&fid=15
 http://bbs.upcd.org/forum.php?mod=rss&fid=2
 http://bbs.upcd.org/forum.php?mod=rss&fid=3
-http://www.guokr.com/rss/
