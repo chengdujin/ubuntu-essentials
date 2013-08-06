@@ -20,9 +20,9 @@
  Boston, MA 02111-1307, USA.
 
 -->
-<style-scheme id="darkmate" _name="Darkmate" version="1.0">
-  <author>Luigi Maselli</author>
-  <_description>Color scheme Darkmate, for dark backgrounds</_description>
+<style-scheme id="darkermate" _name="Darkermate" version="1.0">
+  <author>Maximiliano Guzman</author>
+  <_description>A rip of Luigi Maselli's Darkmate, for darker backgrounds</_description>
 
 <!--
         Colors from the Darkmate palette. See it in action on http://grigio.org/files/darkmate.png
@@ -44,7 +44,7 @@
   <color name="orange" value="#ff6100"/>
   <color name="ambra" value="#ff9900"/>
   <color name="asfalto" value="#555753"/>
-  <color name="carbon" value="#232323"/>
+  <color name="carbon" value="#121212"/>
 
 <!--
         GUI styles 
