@@ -8,7 +8,6 @@ Software
 6. Banshee and its Douban plugin
 7. my-weather-indicator
 8. Xpad
-9. Ranger
 10. Sublime-text-2
 11. newsbeuter
 12. fish 
