@@ -14,6 +14,7 @@ Software
 13. Ubuntu-Tweak
 13. System Load Indicator /Michael Hofmann
 14. GMate github:gmate/gmate
+15. tig (visualize git log)
 
 
 Code Segment
