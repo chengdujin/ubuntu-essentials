@@ -39,11 +39,14 @@ set undofile
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=80
 " save if losing focus
 au FocusLost * :wa
 set clipboard=unnamed
 set relativenumber
+" show tab/tail
+set listchars=tab:>~,nbsp:_,trail:.
+set list
 
 :iabbrev pyhead #!/usr/bin/env python <cr>#-*- coding: utf-8 -*- <cr><cr>import sys <cr>reload(sys) <cr>sys.setdefaultencoding('UTF-8')
 :iabbrev pytodo <cr># TODO:<Esc>
@@ -100,6 +103,10 @@ noremap <F6> :CtrlPMixed<cr>
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
 nnoremap <leader>. :CtrlPTag<cr>
+" taglist
+set tags=tags;/
+let Tlist_Ctags_Cmd="/usr/bin/ctags"
+nnoremap <silent> <F7> :TlistToggle<CR>
 
 
 filetype off                   " required!
@@ -121,6 +128,9 @@ Bundle 'vim-scripts/restore_view.vim'
 Bundle 'tell-k/vim-autopep8'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'klen/python-mode'
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on     " required!
 
