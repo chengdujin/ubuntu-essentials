@@ -6,3 +6,8 @@ notify-always no
 notify-screen yes
 notify-program notify-send
 # browser "w3m %u"
+browser open
+display-article-progress yes
+show-read-feeds no
+show-read-articles no
+proxy 172.19.1.2:9217
