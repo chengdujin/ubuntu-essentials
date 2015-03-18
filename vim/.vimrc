@@ -1,4 +1,5 @@
 syntax on
+set shell=/bin/bash
 set nocompatible
 set number
 set showmatch
@@ -71,7 +72,7 @@ noremap <leader>= <C-w>+
 noremap <leader>[ <C-w><
 noremap <leader>] <C-w>>
 
-" Bundle-specific
+" Plugin-specific
 map <F5> :NERDTreeToggle<CR>
 " Gundo enabler
 nnoremap <F4> :GundoToggle<CR>
@@ -110,27 +111,29 @@ nnoremap <silent> <F7> :TlistToggle<CR>
 
 
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-" My Bundles here:
-Bundle 'scrooloose/nerdtree'
-Bundle 'uguu-org/vim-matrix-screensaver'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'bling/vim-airline'
-"Bundle 'Lokaltog/powerline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'sjl/gundo.vim'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'vim-scripts/restore_view.vim'
-Bundle 'tell-k/vim-autopep8'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'klen/python-mode'
-Bundle 'derekwyatt/vim-scala'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+" My Plugins here:
+Plugin 'scrooloose/nerdtree'
+Plugin 'uguu-org/vim-matrix-screensaver'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'bling/vim-airline'
+"Plugin 'Lokaltog/powerline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'sjl/gundo.vim'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'vim-scripts/restore_view.vim'
+Plugin 'tell-k/vim-autopep8'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'klen/python-mode'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'fatih/vim-go'
 
+call vundle#end()
 filetype plugin indent on     " required!
 

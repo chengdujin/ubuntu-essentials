@@ -10,4 +10,5 @@ browser open
 display-article-progress yes
 show-read-feeds no
 show-read-articles no
-proxy 172.19.1.2:9217
+use-proxy yes
+proxy 10.240.166.32:80
