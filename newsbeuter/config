@@ -11,4 +11,4 @@ display-article-progress yes
 show-read-feeds no
 show-read-articles no
 use-proxy yes
-proxy 10.240.166.32:80
+# proxy 10.240.166.32:80
